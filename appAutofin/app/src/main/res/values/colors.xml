@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#191f6c</color>
+    <color name="colorPrimaryDark">#191f6c</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="child">#2c35ba</color>
+    <color name="blanco">#fff</color>
+    <color name="negro">#111</color>
+    <color name="grisClaro">#F1F1F1</color>
+    <color name="grisMedio">#cccccc</color>
+    <color name="grisFurte">#c4c4c4</color>
+    <color name="verdeTitulos">#a3ce51</color>
+    <color name="verde_down">#00B300</color>
+    <color name="grisTitles">#464646</color>
+    <color name="grisClaroTransparente">#9FF1F1F1</color>
+    <color name="activo">#9F3BF306</color>
+    <color name="adeudo">#9FD10000</color>
+    <color name="autofin">#131753</color>
+
+
+</resources>

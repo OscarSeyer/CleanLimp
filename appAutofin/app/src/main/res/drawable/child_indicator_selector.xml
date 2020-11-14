@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:bottom="20dp"
+        android:left="10dp"
+        android:top="20dp"
+         >
+
+        <selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+            <item
+                android:drawable="@drawable/ic_line_indicator"
+                android:state_expanded="true">
+
+            </item>
+
+            <item
+                android:drawable="@drawable/ic_line_indicator"
+                android:state_expanded="false">
+            </item>
+        </selector>
+
+    </item>
+
+
+</layer-list>

@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/cly_head"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ripple_white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp">
+
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/gl_group"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent=".3" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_cantidad_total_title"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginStart="15dp"
+                    android:drawableStart="@drawable/ic_up_white"
+                    android:drawablePadding="5dp"
+                    android:text="Monto :"
+                    android:textColor="@android:color/white"
+                    app:layout_constraintEnd_toStartOf="@+id/gl_group"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"/>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_cantidad_total"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:gravity="start"
+                    android:text="$ 580,378.00"
+                    android:textColor="@android:color/white"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toEndOf="@+id/tv_cantidad_total_title"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"/>
+
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cly_expandable"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/child"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cly_head"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="225dp"
+            android:layout_marginStart="10pt"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/gl_result"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent=".6" />
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_cuota_total_title"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:drawableStart="@drawable/ic_line_indicator"
+                android:layout_marginStart="20dp"
+                android:text="Cuota :"
+                android:textColor="@android:color/white"
+                app:layout_constraintEnd_toStartOf="@+id/gl_result"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_cuota_total"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+                android:text="$ 3,568.74"
+                android:textColor="@android:color/white"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/tv_cuota_total_title"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/gl_result"
+                app:layout_constraintTop_toTopOf="@+id/tv_cuota_total_title" />
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_inscripcion_title"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:drawableStart="@drawable/ic_line_indicator"
+                android:layout_marginStart="20dp"
+                android:text="Inscripción :"
+                android:textColor="@android:color/white"
+                app:layout_constraintEnd_toStartOf="@+id/gl_result"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_cuota_total_title" />
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_inscripcion"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+                android:text="$ 10,098.58"
+                android:textColor="@android:color/white"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/tv_inscripcion_title"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/gl_result"
+                app:layout_constraintTop_toTopOf="@+id/tv_inscripcion_title" />
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_cuota_inscripcion_title"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:drawableStart="@drawable/ic_line_indicator"
+                android:layout_marginStart="20dp"
+                android:text="Cuota + inscripción :"
+                android:textColor="@android:color/white"
+                app:layout_constraintEnd_toStartOf="@+id/gl_result"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_inscripcion_title" />
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_cuota_inscripcion"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+                android:text="$ 13,667.32"
+                android:textColor="@android:color/white"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/tv_cuota_inscripcion_title"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/gl_result"
+                app:layout_constraintTop_toTopOf="@+id/tv_cuota_inscripcion_title" />
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_mensualidad_adjudica_title"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:drawableStart="@drawable/ic_line_indicator"
+                android:layout_marginStart="20dp"
+                android:text="Mensualidad adjudicatario:"
+                android:textColor="@android:color/white"
+                app:layout_constraintEnd_toStartOf="@+id/gl_result"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_cuota_inscripcion_title" />
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_mensualidad_adjudica"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+                android:text="$ 3,568.74"
+                android:textColor="@android:color/white"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/tv_mensualidad_adjudica_title"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toEndOf="@+id/gl_result"
+                app:layout_constraintTop_toTopOf="@+id/tv_mensualidad_adjudica_title"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_mensualidad_adjudica_total_title"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:drawableStart="@drawable/ic_line_indicator"
+                android:text="Mensualidad adjudicado:"
+                android:textColor="@android:color/white"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/gl_result"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_mensualidad_adjudica_title" />
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_mensualidad_adjudica_total"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+                android:text="$ 0.00"
+                android:textColor="@android:color/white"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/tv_mensualidad_adjudica_total_title"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/gl_result"
+                app:layout_constraintTop_toTopOf="@+id/tv_mensualidad_adjudica_total_title" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
